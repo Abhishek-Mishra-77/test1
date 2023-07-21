@@ -7,38 +7,39 @@ import './Cart.css';
 const Cart = (props) => {
 
     const cartCtx = useContext(ItemProvideContext);
-
-    const cartItem =
+    console.log(cartCtx)
+    const cartItems =
         <ul>
             {cartCtx.items.map((item) => (
                 <CartItem
                     key={item.id}
                     id={item.id}
                     count={item.count}
-                    description={item.description}
-                    name={item.name}
-                    price={item.price}
+                    name={item.enteredName}
+                    description={item.enteredDescription}
+                    quantity={item.enteredQuantity}
+                    price={item.enteredPrice}
                     addByOne={cartCtx.addByOne}
+                    addByTwo={cartCtx.addByTwo}
                 />
             ))}
         </ul>
 
     return (
         <Model>
+            {cartItems}
             <div className='total'>
-                <span>Total Amount</span>
-                <span>$ 20</span>
+                <span>TotalAmount</span>
+                <span>$ {cartCtx.totalAmount}</span>
             </div>
             <div className='actions'>
-                <button
-                    onClick={props.cartCloseHandler}
-                    className='buttonItem'>
+                <button className='buttonItem' onClick={props.cartCloseHandler}>
                     Close
                 </button>
                 <button>Order</button>
             </div>
 
-        </Model>
+        </Model >
     )
 }
 

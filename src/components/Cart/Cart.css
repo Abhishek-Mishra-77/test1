@@ -9,7 +9,6 @@
 .total {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-weight: bold;
   font-size: 1.5rem;
   color: orange;
@@ -25,8 +24,7 @@
   cursor: pointer;
   background-color: transparent;
   border: 1px solid #892b06;
-  padding: 0.5rem 2rem;
-  border-radius: 25px;
+  border-radius: 12px;
   margin-left: 4rem;
 }
 
@@ -41,70 +39,23 @@
   color: whiter;
 }
 
-/* .cart {
-    text-align: center;
-    max-width: 30rem;
-    max-height: max-content;
-    width: 80%;
-    margin: auto;
-    position: relative;
-    background-color: white;
-    color: black;
-    border-radius: 14px;
-    padding: 1rem;
-    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
-  }
-  
-  .cartContent {
-    display: inline-grid;
-    float: left;
-  }
-  
-  .name {
-    font-size: 14px;
-    margin-top: -2px;
-  }
-  
-  .amount {
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: -5px;
-  }
-  
-  .price1 {
-      float: right;
-      margin-top: -30px;
-      font-weight: bold;
-      font-size: 20px;
-  }
-  
-  .price button {
-      float: right;
-      margin-right: -2.5rem;
-      padding: 5px 12px;
-      border-radius: 14px;
-      
-  }
-  
-  .button1 {
-     margin-left: 5rem;
-     background-color: #8a2b06;
-     color: white;
-     border: none;
-     cursor: pointer;
-  }
-  
-  
-  .button2 {
-      background-color: white;
-      color: #8a2b06;
-      border: 1px solid #8a2b06;
-     cursor: pointer;
-      
-   }
-  
-   .button2:hover {
-      background-color: #8a2b06;
-      color: white;
-      border: none;
-   } */
+.actions button {
+  margin-left: 5rem;
+  background-color: #8a2b06;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.actions button {
+  background-color: white;
+  color: #8a2b06;
+  border: 1px solid #8a2b06;
+  cursor: pointer;
+}
+
+.actions button :hover {
+  background-color: #8a2b06;
+  color: white;
+  border: none;
+}

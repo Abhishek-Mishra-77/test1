@@ -8,7 +8,7 @@ const ListItem = (props) => {
 
     const cartCtx = useContext(ItemProvideContext);
 
-  
+      
 
     return (
         <div className={classes.main}>
@@ -34,9 +34,9 @@ const ListItem = (props) => {
                             <td>{item.enteredDescription}</td>
                             <td>{item.enteredPrice}Rs</td>
                             <td>{item.enteredQuantity}qty</td>
-                            <td>{<button onClick={() => cartCtx.addByOne(item.id)}>Buy1</button>}</td>
-                            <td>{<button onClick={() => cartCtx.addByTwo(item.id)}>Buy2</button>}</td>
-                            <td>{<button onClick={()=> cartCtx.addByThree(item.id)}>Buy3</button>}</td>
+                            <td>{<button onClick={() => cartCtx.addByOne(item)}>Buy1</button>}</td>
+                            <td>{<button onClick={() => cartCtx.addByTwo(item)}>Buy2</button>}</td>
+                            <td>{<button onClick={()=> cartCtx.addByThree(item)}>Buy3</button>}</td>
                             <td>{<button onClick={() => props.removeListHandler(item.id)}>Delete</button>}</td>
                         </tr>
                     ))}
